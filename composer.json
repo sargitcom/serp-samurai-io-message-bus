@@ -1,6 +1,7 @@
 {
     "name": "kamil/message-bus",
     "type": "library",
+    "stability": "stable",
     "autoload": {
         "psr-4": {
             "Kamil\\MessageBus\\": "src/"
