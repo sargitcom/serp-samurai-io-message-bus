@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Lib\MessageBus;
+namespace Kamil\MessageBus;
 
 abstract class Event
 {

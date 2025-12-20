@@ -1,0 +1,16 @@
+{
+    "name": "kamil/message-bus",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Kamil\\MessageBus\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Kamil Pietrzkiewicz",
+            "email": "sargitcom@gmail.com"
+        }
+    ],
+    "require": {}
+}

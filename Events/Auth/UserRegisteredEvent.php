@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Lib\MessageBus\Events\Auth;
+namespace Kamil\MessageBus\Events\Auth;
 
-use App\Lib\MessageBus\Event;
+use Kamil\MessageBus\Event;
 
 class UserRegisteredEvent extends Event
 {
