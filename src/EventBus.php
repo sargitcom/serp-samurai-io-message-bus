@@ -1,6 +1,6 @@
 <?php
 
-namespace Kamil\MessageBus;
+namespace SerpSamuraiIo\MessageBus;
 
 use PhpAmqpLib\Connection\AMQPStreamConnection;
 use PhpAmqpLib\Message\AMQPMessage;

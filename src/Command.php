@@ -1,12 +1,12 @@
 <?php
 
-namespace Kamil\MessageBus;
+namespace SerpSamuraiIo\MessageBus;
 
-abstract class Event
+abstract class Command
 {
     abstract public static function getService(): string;
-    abstract public static function getEventName(): string;
-    abstract public static function getEventVersion(): string;
+    abstract public static function getCommandName(): string;
+    abstract public static function getCommandVersion(): string;
     abstract public static function fromPayload(array $payload): self;
     abstract public function getPayload(): array;
 
@@ -14,8 +14,8 @@ abstract class Event
     {
         return json_encode([
             'service' => static::getService(),
-            'eventName' => static::getEventName(),
-            'eventVersion' => static::getEventVersion(),
+            'eventName' => static::getCommandName(),
+            'eventVersion' => static::getCommandVersion(),
             'payload' => $this->getPayload(),
         ]);
     }

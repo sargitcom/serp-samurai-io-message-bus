@@ -1,8 +1,8 @@
 <?php
 
-namespace Kamil\MessageBus\Events\Auth;
+namespace SerpSamuraiIo\MessageBus\src\Events\Auth;
 
-use Kamil\MessageBus\Event;
+use SerpSamuraiIo\MessageBus\Event;
 
 class UserRegisteredEvent extends Event
 {
