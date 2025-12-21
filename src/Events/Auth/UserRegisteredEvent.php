@@ -6,11 +6,21 @@ use SerpSamuraiIo\MessageBus\Event;
 
 class UserRegisteredEvent extends Event
 {
-    private string $test;
+    private string $id;
+    private string $email;
+    private string $password;
+    private string $isTos;
 
-    public function __construct(string $test)
-    {
-        $this->test = $test;
+    public function __construct(
+        string $id,
+        string $email,
+        string $password,
+        string $isTos,
+    ) {
+        $this->id = $id;
+        $this->email = $email;
+        $this->password = $password;
+        $this->isTos = $isTos;
     }
 
     public static function getService(): string
@@ -31,13 +41,40 @@ class UserRegisteredEvent extends Event
     public function getPayload(): array
     {
         return [
-            'test' => $this->test,
-            'test2' => 'test2',
+            'id' => $this->id,
+            'email' => $this->email,
+            'password' => $this->password,
+            'tos' => $this->isTos,
         ];
     }
 
     public static function fromPayload(array $payload): self
     {
-        return new self($payload["test"]);
+        return new self(
+            $payload["id"],
+            $payload["email"],
+            $payload["password"],
+            $payload["tos"],
+        );
+    }
+
+    public function getId(): string
+    {
+        return $this->id;
+    }
+
+    public function getEmail(): string
+    {
+        return $this->email;
+    }
+
+    public function getPassword(): string
+    {
+        return $this->password;
+    }
+
+    public function getIsTos(): string
+    {
+        return $this->isTos;
     }
 }
