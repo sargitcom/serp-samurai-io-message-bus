@@ -1,10 +1,10 @@
 {
-    "name": "kamil/message-bus",
+    "name": "serp-samurai-io/message-bus",
     "type": "library",
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "Kamil\\MessageBus\\": "src/"
+            "SerpSamuraiIo\\MessageBus\\": "src/"
         }
     },
     "authors": [
