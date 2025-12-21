@@ -1,3 +1,5 @@
 services:
 
+  SerpSamuraiIo\MessageBus\CommandBus: ~
+
   SerpSamuraiIo\MessageBus\EventBus: ~
