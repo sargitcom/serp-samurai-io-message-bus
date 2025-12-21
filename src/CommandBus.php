@@ -44,7 +44,7 @@ class CommandBus
                 return ucfirst($element);
             }, explode("-", $data['eventName'])));
 
-            $eventClass = "App\\Lib\\MessageBus\\Events\\" . ucfirst($data['service']) . "\\" . $class . "Event";
+            $eventClass = "SerpSamuraiIo\\MessageBus\\Events\\" . ucfirst($data['service']) . "\\" . $class . "Event";
 
             if ($eventClass !== $className) {
                 return;
