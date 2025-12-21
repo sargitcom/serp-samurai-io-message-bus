@@ -1,6 +1,6 @@
 <?php
 
-namespace SerpSamuraiIo\MessageBus\src\Events\Auth;
+namespace SerpSamuraiIo\MessageBus\Events\Auth;
 
 use SerpSamuraiIo\MessageBus\Event;
 
